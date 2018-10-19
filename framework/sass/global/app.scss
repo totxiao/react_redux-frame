@@ -1,0 +1,154 @@
+body, #root, div[data-reactroot], .mi-app-container, .mi-app-initializing {
+  height: 100vh;
+}
+
+.mi-app-initializing {
+  width: 100%;
+  display: table;
+  background-color: #404040;
+  height:100vh;
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.mi-sider-extra {
+  position: relative;
+}
+
+.mi-row-action {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.mi-input-extra {
+  .ant-input-group-addon {
+    padding: 0;
+    a {
+      width: 28px;
+      height: 26px;
+      line-height: 26px;
+      display: inline-block;
+
+      &.mi-input-extra-danger {
+        color: #f04134;
+        background-color: inherit;
+
+        &:hover {
+          background-color: #f04134;
+          color: #fff;
+        }
+      }
+    }
+
+    >div {
+      margin:0;
+      padding:0;
+      display: block;
+
+      a:not(:last-child) {
+        border-right: 1px solid #d9d9d9;
+      }
+    }
+  }
+}
+.main-menu{
+  ::-webkit-scrollbar{
+    display:none;
+  }
+}
+.mi-app-header{
+  padding:0;
+  background:#000;
+  height:10vh;
+  color:#fff;
+  line-height:10vh;
+  .mi-app-menu{
+    height:10vh;
+    display: flex;
+    .mi-app-title{
+      width:20%;
+      text-align: center;
+      letter-spacing: 8px;
+      font-size: 30px;
+      .title-svg{
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        background:#000;
+        left:0;
+        .title-word{
+          fill: url(#p-fire);
+          stroke: #330000;
+          stroke-width: 8;
+          stroke-opacity: .5;
+          font: 5.5em/1 'STXingkai';
+          text-transform: uppercase;
+        }
+      }
+      .title-word{
+        position: absolute;
+        left:0;
+        top:0;
+        background:#000;
+        width:20%;
+        -webkit-text-stroke: 1px red;
+        color: transparent;
+        font-weight: bolder;
+      }
+      img{
+        width:100%;
+        height:10vh;
+        margin-top:-30px;
+      }
+    }
+    .mi-app-menu-box {
+      display: inline-block;
+      width: 55%;
+      height: 10vh;
+      overflow: hidden;
+      ul {
+        padding: 0;
+        list-style: none;
+        margin: 0 20px;
+        li {
+          width: 20%;
+          display: inline-block;
+          text-align: center;
+          height:10vh;
+          padding-top:1.5vh;
+          cursor: pointer;
+          span{
+            margin:0;
+            padding:0;
+            display: block;
+          }
+          .p1 {
+            font-size:18px;
+            letter-spacing: 1px;
+            line-height: 2;
+          }
+          .p2{
+            font-size:11px;
+            letter-spacing: 1px;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mi-app-content{
+  width:100%;
+  min-height:80vh;
+}
+
+.mi-app-footer{
+  height:10vh;
+  background:#ccc;
+}
